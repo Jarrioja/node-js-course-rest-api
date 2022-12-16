@@ -1,4 +1,4 @@
-const moogose = require("mongoogse");
+const moogose = require("mongoose");
 const Schema = moogose.Schema;
 
 const postSchema = new Schema(
