@@ -59,6 +59,7 @@ app.use((error, req, res, next) => {
   const data = error.data;
   res.status(status).json({ message: message, data: data });
 });
+mongoose.set("strictQuery", false);
 mongoose
   .connect(MONGODB_URI)
   .then((result) => {
